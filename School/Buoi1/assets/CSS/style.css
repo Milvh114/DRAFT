@@ -1,0 +1,7 @@
+#wrapper{
+    border: 10px solid green
+}   
+.item {
+    border: 1px solid ;
+    border-color: rgb(201, 44, 44);
+}
