@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+</head>
+<body>
+    <!--
+        <div class='post-item'>
+            <h2 title="Learn JS">JS</h2>
+            <p>Welcome Minh to JS</p>
+        </div>
+    -->
+    <div id='root'></id>
+    <script>
+        //react
+        const postItem = React.createElement(
+            'div',
+            {
+                class:'post-item'
+            },
+            React.createElement(
+                'h2',
+                {
+                    title:'Learn JS'
+                },
+                'JS'),
+            React.createElement('p',
+                null,
+                'Welcome Minh to JS')
+        )
+        console.log(postItem)
+        //get root elemtent
+        // const root = document.getElementById('root')
+        const container = document.getElementById('root')
+
+        //React@17
+        //React-DOM -> render UI
+        // ReactDOM.render(postItem,root)
+        
+        //React@18
+        const root = ReactDOM.createRoot(container)
+        root.render(postItem)
+
+
+    </script>
+</body>
+</html>
