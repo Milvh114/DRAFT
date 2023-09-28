@@ -34,12 +34,12 @@
         )
         console.log(postItem)
         //get root elemtent
-        // const root = document.getElementById('root')
-        const container = document.getElementById('root')
+        // const root = document.getElementById('root')//React@17
+        const container = document.getElementById('root')//React@18
 
-        //React@17
+        
         //React-DOM -> render UI
-        // ReactDOM.render(postItem,root)
+        // ReactDOM.render(postItem,root)//React@17
         
         //React@18
         const root = ReactDOM.createRoot(container)
